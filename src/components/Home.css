@@ -1,0 +1,36 @@
+.home-container {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+  
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("./../../public/image2.jpg"); /* Path to your background image */
+    background-size: cover;
+    background-position: center;
+    z-index: 0; /* Ensure the background image is behind the content */
+}
+  
+.home-content-container {
+    position: relative; /* Adjusted to make sure it's positioned relative to the background image */
+    z-index: 1; /* Ensure content is above the background image */
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust the opacity by changing the last value (0.5 in this example) */
+    border-radius: 8px; /* Add border-radius for rounded corners */
+    padding: 20px; /* Add padding for spacing inside the card */
+    text-align: center;
+    top: -18%;
+}
+  
+.home-content-container h1,
+.home-content-container p,
+.home-content-container a {
+    color: #fff;
+}
